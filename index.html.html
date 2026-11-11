@@ -130,7 +130,9 @@ main { padding: 0 16px 24px; }
 .menu-caption span { color: var(--muted); font-size: 11px; }
 
 .red { --accent: #c83434; --tint: #fdebec; }
-.blue { --accent: #2c6ed8; --tint: #edf4ff; }
+.blue { --accent: #feb415; --tint: #fff0cd; }
+.menu-card.blue .tag { color: var(--accent); }
+.blue :is(.step, .progress-line output, .coupon-status, .discount, .pantry-result__label) { color: var(--ink); }
 .green { --accent: #3e7f38; --tint: #edf7e8; }
 .menu-list { display: grid; gap: 12px; }
 .menu-card {
@@ -239,7 +241,7 @@ progress::-moz-progress-bar { background: var(--accent); }
 
 .locator-badge { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 999px; color: #fff; font-size: 14px; font-weight: 900; line-height: 1; box-shadow: inset 0 -1px 0 rgba(0,0,0,.12); }
 .locator-badge.red { background: #d83a3a; }
-.locator-badge.blue { background: #2f73e0; }
+.locator-badge.blue { background: var(--accent); color: var(--ink); }
 .locator-badge.green { background: #4d8d39; }
 .coupon-box { margin-top: 11px; padding: 12px; background: var(--tint); border-radius: 14px; }
 .coupon-box h3 { font-size: 15px; margin-top: 5px; line-height: 1.4; }
