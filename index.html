@@ -392,7 +392,24 @@ button, input, select, textarea { font-family: inherit; }
     grid-template-columns: 1fr;
   }
 }
+.blue {
+  --accent: #FEB415;
+  --tint: #FFF0CD;
+}
 
+.menu-card.blue .tag {
+  color: var(--accent);
+  background: var(--tint);
+}
+
+.blue :is(.step, .progress-line output, .coupon-status, .discount, .pantry-result__label) {
+  color: var(--ink);
+}
+
+.locator-badge.blue {
+  background: var(--accent);
+  color: var(--ink);
+}
 </style>
 </head>
 <body>
